@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/angular-material/angular-material.min.css">
+</head>
+<body ng-app="ETicketsApp" ng-cloak ng-controller="listCtrl">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <span>e-tickets app</span>
+      <span flex></span>
+      <md-button ng-disabled="!basket.length" ng-click="confirmOrder()">
+        My Basket ({{ basket.length }})
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div layout="row" layout-padding layout-wrap layout-align="center center">
+    <div flex="25" ng-repeat="ticket in tickets">
+
+      <md-card>
+        <img ng-src="{{ ticket.image }}" class="md-card-image" />
+        <md-card-title>
+          <md-card-title-text>
+            <span>{{ ticket.title }}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          {{ ticket.price }} uah
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center center">
+          <md-button ng-click="buy(ticket.id)">Buy</md-button>
+        </md-card-actions>
+      </md-card>
+
+    </div>
+  </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="vendor/angular-animate/angular-animate.min.js"></script>
+  <script src="vendor/angular-aria/angular-aria.min.js"></script>
+  <script src="vendor/angular-messages/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="vendor/angular-material/angular-material.min.js"></script>
+
+  <script src="vendor/underscore/underscore-min.js"></script>
+
+  <!--  @todo: check if domain is local (for e.g. contains "local")
+        then include src-file, (for e.g. less, etc)
+        in case if we're on production - include /assets/ -->
+
+  <!-- Your application -->
+  <script type="text/javascript" src="scripts/app.js"></script>
+
+</body>
+</html>

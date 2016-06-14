@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2pac-shakyr",
+    "title": "2pac. Сольний концерт в Дрогобичі.",
+    "image": "http://reperok.ru/uploads/posts/2016-05/1462649160_foto-2pac-2.png",
+    "price": -10
+  },
+  {
+    "id": "oe-gyf",
+    "title": "ОЕ і Гуф.",
+    "image": "http://www.ufest.in.ua/sites/default/files/32_0.jpeg",
+    "price": 100500
+  },
+  {
+    "id": "alla-pygachova",
+    "title": "Алла Пугачова. Благодійний концерт в Криму.",
+    "image": "http://star.korupciya.com/wp-content/uploads/2016/01/1436620653_pap.jpg",
+    "price": 150
+  },
+  {
+    "id": "rhcp",
+    "title": "Red Hot Chili Peppers",
+    "image": "http://img.112.agency/original/2016/05/06/228902.jpg",
+    "price": 100
+  }
+]
